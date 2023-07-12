@@ -75,7 +75,7 @@ function Trainers() {
                         </select>
                     </div>
                     <div onClick={() => {
-                        navigate('/hr/addtrainer')
+                        navigate('/hr/addstudent')
                     }} className={style.sec2} >
                         <img src={add} alt="" />
                         <p>Add Student</p>
@@ -107,7 +107,7 @@ function Trainers() {
                                         <td>{employee.class}</td>
                                         <td >
                                             <p onClick={() => {
-                                                navigate('/hr/employeeProfile')
+                                                navigate('/hr/studentProfile')
                                             }} className={style.view}>View</p>
                                         </td>
                                         <td >

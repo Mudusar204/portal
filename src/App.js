@@ -20,23 +20,23 @@ function App() {
         {/* --->HR Portal<--- */}
         {/* Employee Button Pages */}
         <Route path="/hr" element={<WellcomePage name={'Admin'}/>} />
-        <Route path="/hr/employeeProfile" element={<EmployeeProfile name={"Admin"}/>} />
-        <Route path="/login" element={<Signin />} />
+        <Route path="/hr/studentProfile" element={<EmployeeProfile name={"Admin"}/>} />
+        <Route path="/" element={<Signin />} />
         {/* Training recs */}
-        <Route path="/hr/trainings" element={<Trainings />} />
-        <Route path="/hr/traininginfo" element={<TrainingInfo name={"Admin"}/>} />
+        <Route path="/hr/applications" element={<Trainings />} />
+        <Route path="/hr/studentinfo" element={<TrainingInfo name={"Admin"}/>} />
         {/* Training */}
-        <Route path="/hr/assign/trainings" element={<AssignTrainings />} />
+        <Route path="/hr/feeReport" element={<AssignTrainings />} />
         {/* Do Working */}
         {/* personalRec */}
         <Route path="/hr/personalrec" element={<Main />} />
         {/* Yearly Plan */}
-        <Route path="/hr/giveplan" element={<Input />} />
+        <Route path="/hr/feeManage" element={<Input />} />
         {/* Month Plan */}
         {/* Trainer */}
-        <Route path="/hr/addtrainer" element={<AddTrainer />} />
+        <Route path="/hr/addstudent" element={<AddTrainer />} />
         {/* Do Working */}
-        <Route path="/hr/trainers" element={<Trainers />} />
+        <Route path="/hr/students" element={<Trainers />} />
         {/* ////////////////////////////stdent portal//////////////////////// */}
         <Route path='/student' element={<Wellcome name={'Student'}/>}/>
         <Route path="/student/employeeProfile" element={<EmployeeProfile name={"Student"}/>} />

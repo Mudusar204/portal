@@ -77,7 +77,7 @@ function Main() {
                                         <td className={style.textStyle3}>{employee.class}</td>
                                         <td className={style.textStyle3}>{employee.grade}</td>
                                         <td ><button onClick={() => {
-                                            navigate('/hr/employeeProfile')
+                                            navigate('/hr/studentProfile')
                                         }} className={style.viewBtn}>View</button>
                                         </td>
                                         <td >

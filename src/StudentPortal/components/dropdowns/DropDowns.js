@@ -46,13 +46,13 @@ const DropDowns = (props) => {
                             <img src={user} alt="" />
                             Students
                         </li>
-                        {/* <li className={indicator === '/hr/trainings' ? style.checkedli : null} onClick={() => indicatorManager('/hr/trainings')}>
+                        {/* <li className={indicator === '/hr/applications' ? style.checkedli : null} onClick={() => indicatorManager('/hr/applications')}>
                             <img src={copyPaste} alt="" />
                             Application</li>
-                        <li className={indicator === 'c' ? style.checkedli : null} onClick={() => indicatorManager('/hr/giveplan')}>
+                        <li className={indicator === 'c' ? style.checkedli : null} onClick={() => indicatorManager('/hr/feeManage')}>
                             <img src={pageS} alt="" />
                             Manage Feeses</li>
-                        <li className={indicator === 'plannedtrainings' ? style.checkedli : null} onClick={() => indicatorManager('/hr/assign/trainings')}>
+                        <li className={indicator === 'plannedtrainings' ? style.checkedli : null} onClick={() => indicatorManager('/hr/feeReport')}>
                             <img src={pageS} alt="" />
                             fee Report</li> */}
                     </ul>

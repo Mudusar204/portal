@@ -34,7 +34,7 @@ function AddTrainer() {
                     setOffcanvas(!offcanvas)
                 }} />
                 <HROffcanvas status={offcanvas} />
-                <SideBar />
+                <SideBar panelName={"Admin"}/>
             </div>
             <div className={style.form}>
                 <ProfileUser path='/hr/profile' />

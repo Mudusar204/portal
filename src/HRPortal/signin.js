@@ -12,6 +12,11 @@ export default function Signin() {
           <p>
             Welcome to <span style={{ color: "#F46A06" }}>...</span>
           </p>
+          <button style={{whiteSpace:"nowrap"}} onClick={() => {
+              Navigate('/hr')
+            }} className="mt-3 btn btn-primary">
+              Fee Manage
+            </button>
         </div>
         <p>Sign In</p>
         <div className="w-100 mb-4">

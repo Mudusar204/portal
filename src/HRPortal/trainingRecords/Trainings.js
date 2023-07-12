@@ -41,7 +41,7 @@ function Trainings() {
 
     const navigate = useNavigate()
     const showtraininginfo = () => {
-        navigate('/hr/traininginfo')
+        navigate('/hr/studentinfo')
     }
     return (
         <div className={style.parent}>
@@ -83,7 +83,7 @@ function Trainings() {
                                         <td className={style.textStyle3}>{employee.month}</td>
                                         <td className={style.textStyle3}>{employee.classSelect}</td>
                                         <td ><button onClick={() => {
-                                            navigate('/hr/traininginfo')
+                                            navigate('/hr/studentinfo')
                                         }} className={style.viewBtn}>View</button>
                                         </td>
 
