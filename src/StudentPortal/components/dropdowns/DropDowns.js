@@ -42,7 +42,7 @@ const DropDowns = (props) => {
                 </div>
                 {isOpen ? <div className={style.optsParent}>
                     <ul className={style.opts}>
-                        <li className={indicator === '/student/employeeProfile' ? style.checkedli : null} onClick={() => indicatorManager('/student/employeeProfile')}>
+                        <li className={indicator === '/student/studentProfile' ? style.checkedli : null} onClick={() => indicatorManager('/student/studentProfile')}>
                             <img src={user} alt="" />
                             Students
                         </li>

@@ -1,6 +1,6 @@
-import style from './Input.module.css'
+import style from './ManageFee.module.css'
 import SideBar from '../../components/sidebar/SideBar'
-import add from '../../assets/images/employees/Application Add.svg'
+import add from '../../assets/images/students/Application Add.svg'
 import ProfileUser from '../../components/profileUser/ProfileUser'
 import Select from '../../components/select/Select'
 import Navbar from '../../components/navbar/Navbar'

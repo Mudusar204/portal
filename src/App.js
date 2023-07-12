@@ -1,14 +1,14 @@
 import style from './App.module.css';
 import { Route, Routes } from "react-router-dom";
 import WellcomePage from './HRPortal/welcomePage/Wellcome';
-import EmployeeProfile from './HRPortal/Employees/EmployeeProfile';
-import AddTrainer from './HRPortal/addTrainer/AddTrainer';
-import Input from './HRPortal/yearlyPlan/Input';
-import AssignTrainings from './HRPortal/plannedTrainings/AssignTraining';
-import TrainingInfo from './HRPortal/trainingRecords/Info';
-import Trainings from './HRPortal/trainingRecords/Trainings';
+import StudentProfile from './HRPortal/students/StudentProfile';
+import AddStudent from './HRPortal/addStudent/AddStudent';
+import ManageFee from './HRPortal/manageFees/ManageFee';
+import FeeReport from './HRPortal/feeReport/FeeReport';
+import StudentInfo from './HRPortal/applications/StudentInfo';
+import Applications from './HRPortal/applications/Applications';
 import Main from './HRPortal/personalRec/Main';
-import Trainers from './HRPortal/addTrainer/Trainers';
+import Student from './HRPortal/addStudent/Student';
 import Signin from './HRPortal/signin';
 //////////////////////////student portal/////////////////
 import Wellcome from './StudentPortal/welcomePage/Wellcome';
@@ -20,26 +20,26 @@ function App() {
         {/* --->HR Portal<--- */}
         {/* Employee Button Pages */}
         <Route path="/hr" element={<WellcomePage name={'Admin'}/>} />
-        <Route path="/hr/studentProfile" element={<EmployeeProfile name={"Admin"}/>} />
+        <Route path="/hr/studentProfile" element={<StudentProfile name={"Admin"}/>} />
         <Route path="/" element={<Signin />} />
         {/* Training recs */}
-        <Route path="/hr/applications" element={<Trainings />} />
-        <Route path="/hr/studentinfo" element={<TrainingInfo name={"Admin"}/>} />
+        <Route path="/hr/applications" element={<Applications />} />
+        <Route path="/hr/studentinfo" element={<StudentInfo name={"Admin"}/>} />
         {/* Training */}
-        <Route path="/hr/feeReport" element={<AssignTrainings />} />
+        <Route path="/hr/feeReport" element={<FeeReport />} />
         {/* Do Working */}
-        {/* personalRec */}
+        {/* personalRec */} 
         <Route path="/hr/personalrec" element={<Main />} />
         {/* Yearly Plan */}
-        <Route path="/hr/feeManage" element={<Input />} />
+        <Route path="/hr/feeManage" element={<ManageFee />} />
         {/* Month Plan */}
         {/* Trainer */}
-        <Route path="/hr/addstudent" element={<AddTrainer />} />
+        <Route path="/hr/addstudent" element={<AddStudent />} />
         {/* Do Working */}
-        <Route path="/hr/students" element={<Trainers />} />
+        <Route path="/hr/students" element={<Student />} />
         {/* ////////////////////////////stdent portal//////////////////////// */}
         <Route path='/student' element={<Wellcome name={'Student'}/>}/>
-        <Route path="/student/employeeProfile" element={<EmployeeProfile name={"Student"}/>} />
+        <Route path="/student/studentProfile" element={<StudentProfile name={"Student"}/>} />
 
 
       </Routes>

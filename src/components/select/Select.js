@@ -1,5 +1,5 @@
 import style from './Select.module.css'
-import arrow from '../../assets/images/addEmployee/arrow.svg'
+import arrow from '../../assets/images/addStudent/arrow.svg'
 import { useState } from 'react'
 function Select(props) {
     const [isOpen, setisOpen] = useState(false)
